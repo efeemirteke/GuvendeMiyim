@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Güvende Misin"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <Button
+        android:id="@+id/btnGuvende"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Güvendeyim"
+        android:textColor="#007305"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnGuvendeDegil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Güvende Değilim"
+        android:textColor="#FF0909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuvende" />
+
+    <Button
+        android:id="@+id/btnVeriTabani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Veri Tabanı"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuvendeDegil" />
+
+    <EditText
+        android:id="@+id/etKisiIsim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/x"
+        android:backgroundTint="@color/green"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="İsim Giriniz"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:textAlignment="center"
+        android:textColor="#478A06"
+        android:textColorHint="#427704"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/etKisiNumara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/x"
+        android:backgroundTint="@color/green"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="Numara Giriniz"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:textAlignment="center"
+        android:textColor="#478A06"
+
+        android:textColorHint="#427704"
+        app:layout_constraintEnd_toEndOf="@+id/etKisiIsim"
+        app:layout_constraintStart_toStartOf="@+id/etKisiIsim"
+        app:layout_constraintTop_toBottomOf="@+id/etKisiIsim" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Rehber Kayıt"
+        android:textAlignment="viewStart"
+        android:textColor="#478A06"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVeriTabani" />
+
+    <Button
+        android:id="@+id/saveNumberButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="sans-serif-light"
+        android:text="Kaydet"
+        android:textColor="#070707"
+        app:layout_constraintEnd_toEndOf="@+id/etKisiNumara"
+        app:layout_constraintStart_toStartOf="@+id/etKisiNumara"
+        app:layout_constraintTop_toBottomOf="@+id/etKisiNumara" />
+
+    <ImageView
+        android:id="@+id/imgRehber"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveNumberButton"
+        app:srcCompat="@drawable/rehber_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E6D1A7"
+
+    >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCall"></View>
+
+    <TextView
+        android:id="@+id/tvKisiIsim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:text="Kişinin İsmi"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgCall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKisiNumara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Numara"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvKisiIsim"
+        app:layout_constraintStart_toStartOf="@+id/tvKisiIsim"
+        app:layout_constraintTop_toBottomOf="@+id/tvKisiIsim" />
+
+    <ImageView
+        android:id="@+id/imgCall"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvKisiNumara"
+        app:layout_constraintEnd_toStartOf="@+id/imgSms"
+        app:layout_constraintTop_toTopOf="@+id/tvKisiIsim"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/call" />
+
+    <ImageView
+        android:id="@+id/imgSms"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvKisiNumara"
+        app:layout_constraintEnd_toStartOf="@+id/imgRemove"
+        app:layout_constraintTop_toTopOf="@+id/tvKisiIsim"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/message" />
+
+    <ImageView
+        android:id="@+id/imgRemove"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvKisiNumara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvKisiIsim"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/remove" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
